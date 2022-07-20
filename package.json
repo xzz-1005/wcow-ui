@@ -1,5 +1,5 @@
 {
-  "name": "wxcow-ui",
+  "name": "wcow-ui",
   "private": false,
   "version": "0.1.0",
   "scripts": {
@@ -7,8 +7,8 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "main": "dist/wxcow-ui.cjs.js",
-  "module": "dist/wxcow-ui.es.js",
+  "main": "dist/wcow-ui.cjs.js",
+  "module": "dist/wcow-ui.es.js",
   "types": "dist/index.d.ts",
   "dependencies": {
     "vue": "^3.2.37"

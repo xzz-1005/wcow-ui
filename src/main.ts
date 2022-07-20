@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import DemoUI from './index'
+import WxCowUI from './index'
 
-createApp(App).use(DemoUI).mount('#app')
+createApp(App).use(WxCowUI).mount('#app')

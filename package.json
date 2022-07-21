@@ -1,7 +1,7 @@
 {
   "name": "wcow-ui",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,6 +10,12 @@
   "main": "dist/wcow-ui.js",
   "module": "dist/wcow-ui.mjs",
   "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vite"
+  ],
   "dependencies": {
     "vue": "^3.2.37"
   },

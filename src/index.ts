@@ -1,11 +1,11 @@
 import './style/index.scss'
 
-import DButton from './components/button.vue'
+import WButton from './components/button/index.vue'
 
 import type { App } from 'vue'
 
 const components = [
-  DButton
+  WButton
 ]
 
 export function install(app: App) {
@@ -19,5 +19,5 @@ export default {
 }
 
 export {
-  DButton
+  WButton
 }

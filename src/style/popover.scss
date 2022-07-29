@@ -1,0 +1,24 @@
+.w-popover {
+  cursor: pointer;
+  display: inline-flex;
+  position: relative;
+  .popover-box {
+    &:hover {
+      .popover-box-content {
+        display: block;
+      }
+    }
+  }
+  .popover-box-content {
+    display: none;
+    padding: 16px;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 200px;
+    height: 260px;
+    margin-top: 12px;
+    border-radius: 4px;
+    z-index: 2;
+  }
+}

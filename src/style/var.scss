@@ -1,0 +1,120 @@
+:root {
+// 颜色
+$--color-primary: #217AF9;
+$--color-white: #FFFFFF;
+$--color-success: #50E07B;
+$--color-warning: #FFA53A;
+$--color-danger: #FF4343;
+$--color-info: #999999;
+$--color-background-grey: #F7F8FD;
+$--color-background-ivory: #DDDDDD;
+$--table-background-grey-2: #F5F6F8;
+$--color-background-grey-3: #E2E4ED;
+$--color-black: #000;
+$--color-out-his: #F1682C;
+$--color-out-his-2: #FF793E;
+$--color-in-his: #D84559;
+$--color-red: #FF4343;
+$--color-green: #3BCFAD;
+$--color-btn-disable: #CCCCCC;
+$--color-brown: #694125;
+$--color-blue: #4BAAFF;
+
+$--color-out-his-light-90: mix($--color-white, $--color-out-his, 90%);
+$--color-in-green-light-88: mix($--color-white, $--color-green, 88%);
+$--color-green-light-9: mix($--color-white, $--color-green, 90%);
+$--color-blue-light-9: mix($--color-white, $--color-blue, 90%);
+$--color-out-his-light-9: mix($--color-white, $--color-out-his, 90%);
+$--color-in-his-light-9: mix($--color-white, $--color-in-his, 90%);
+$--color-in-red-light-9: mix($--color-white, $--color-red, 90%);
+$--color-in-red-light-7: mix($--color-white, $--color-red, 70%);
+$--color-in-red-light-3: mix($--color-white, $--color-red, 30%);
+$--color-in-red-light-2: mix($--color-white, $--color-red, 20%);
+$--color-primary-light-1: mix($--color-white, $--color-primary, 10%);
+$--color-primary-light-2: mix($--color-white, $--color-primary, 20%);
+$--color-primary-light-3: mix($--color-white, $--color-primary, 30%);
+$--color-primary-light-4: mix($--color-white, $--color-primary, 40%);
+$--color-primary-light-5: mix($--color-white, $--color-primary, 50%);
+$--color-primary-light-6: mix($--color-white, $--color-primary, 60%);
+$--color-primary-light-7: mix($--color-white, $--color-primary, 70%);
+$--color-primary-light-8: mix($--color-white, $--color-primary, 80%);
+$--color-primary-light-9: mix($--color-white, $--color-primary, 90%);
+$--color-primary-light-92: mix($--color-white, $--color-primary, 92%);
+$--color-primary-light-95: mix($--color-white, $--color-primary, 95%);
+$--color-primary-light-96: mix($--color-white, $--color-primary, 96%);
+$--color-white-transparent-1: mix($--color-white, transparent, 10%);
+$--color-white-transparent-2: mix($--color-white, transparent, 20%);
+$--color-white-transparent-3: mix($--color-white, transparent, 30%);
+$--color-white-transparent-4: mix($--color-white, transparent, 40%);
+$--color-white-transparent-5: mix($--color-white, transparent, 50%);
+$--color-white-transparent-6: mix($--color-white, transparent, 60%);
+$--color-white-transparent-7: mix($--color-white, transparent, 70%);
+$--color-white-transparent-8: mix($--color-white, transparent, 80%);
+$--color-white-transparent-9: mix($--color-white, transparent, 90%);
+$--color-black-transparent-1: mix($--color-black, transparent, 10%);
+$--color-black-transparent-1-6: mix($--color-black, transparent, 16%);
+$--color-black-transparent-2: mix($--color-black, transparent, 20%);
+$--color-black-transparent-3: mix($--color-black, transparent, 30%);
+$--color-black-transparent-4: mix($--color-black, transparent, 40%);
+$--color-black-transparent-5: mix($--color-black, transparent, 50%);
+$--color-black-transparent-6: mix($--color-black, transparent, 60%);
+$--color-black-transparent-7: mix($--color-black, transparent, 70%);
+$--color-black-transparent-8: mix($--color-black, transparent, 80%);
+$--color-black-transparent-9: mix($--color-black, transparent, 90%);
+$--color-primary-light-05: mix($--color-white, $--color-primary, 95%);
+
+// 阴影
+$--box-shadow-base: 0px 6px 13px 0px $--color-primary-light-9;
+$--box-shadow-light: 0px 6px 13px 0px $--color-primary-light-9;
+$--box-shadow-medium: 0px 6px 9px 0px $--color-primary-light-7;
+$--box-shadow-small: 0px 0px 16px 0px $--color-primary-light-9;
+$--box-shadow-little: 0px 10px 20px 0px rgba($--color-primary, 0.1);
+// 字体
+$--font-size-extra-extra-max: 32px;
+$--font-size-extra-max: 30px;
+$--font-size-max: 24px;
+$--font-size-extra-large-2: 22px;
+$--font-size-extra-large: 20px;
+$--font-size-large: 18px;
+$--font-size-medium: 16px;
+$--font-size-base: 14px;
+$--font-size-small: 13px;
+$--font-size-extra-small: 12px;
+$--font-color-white: #ffffff;
+$--font-color-blue: #217af9;
+$--font-color-red: #FF4343;
+$--font-color-black: #333;
+$--font-color-grey: $--color-info;
+$--font-color-grey-2: #666666;
+$--font-color-grey-3: #EEEEEE;
+$--font-color-grey-4: #DDDDDD;
+$--font-color-grey-5: #999999;
+$--font-color-green: #3BCFAD;
+$--border-color-base: #DDDDDD;
+$--color-text-placeholder: $--font-color-grey;
+$--color-text-primary: $--font-color-black;
+
+$--input-icon-color: #AAAAAA;
+// border
+
+$--border-color-light: #EEEEEE;
+$--font-color-4: #DDDDDD;
+$--border-color-primary: #FFFFFF;
+$--border-radius-primary: 4px;
+$--border-radius-small: 2px;
+$--border-radius-medium: 8px;
+$--border-radius-large: 16px;
+$--border-radius-round: 50%;
+// space
+$--space-extra-large: 48px;
+$--space-max: 40px;
+$--space-extra: 36px;
+$--space-very-large: 32px;
+$--space-large: 24px;
+$--space-base: 16px;
+$--space-medium: 12px;
+$--space-small: 8px;
+$--space-little: 6px;
+$--space-mini: 4px;
+$--space-extra-mini: 2px;
+}

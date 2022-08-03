@@ -1,6 +1,12 @@
 .w-input {
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  display: inline-flex;
+  border-radius: 4px;
+  align-items: center;
   input {
     height: 30px;
+    outline: none;
     border: none;
   }
 }

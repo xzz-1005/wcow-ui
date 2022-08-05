@@ -1,6 +1,6 @@
 <template>
 	<div v-for="item in btnList" :key="item">
-		<w-button :disabled="true" :type="item" :round="false"> 一个按钮 </w-button>
+		<w-button :disabled="true" :type="item" :round="true"> 一个按钮 </w-button>
 	</div>
   <w-select></w-select>
   <w-popover>popover

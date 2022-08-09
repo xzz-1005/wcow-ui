@@ -1,26 +1,14 @@
 {
   "name": "wcow-ui",
   "private": false,
-  "version": "0.2.3",
+  "version": "0.2.5",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "exports": {
-    ".": {
-      "import": "./dist/wcow-ui.es.js",
-      "require": "./dist/wcow-ui.umd.js",
-      "types": "./dist/wcow-ui.d.ts"
-    },
-    "./dist/*": {
-      "import": "./dist/wcow-ui.es.js",
-      "require": "./dist/wcow-ui.umd.js",
-      "types": "./dist/wcow-ui.d.ts"
-    }
-  },
-  "main": "./dist/wcow-ui.umd.js",
-  "module": "./dist/wcow-ui.es.js",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
   "types": "es/index.d.ts",
   "sideEffects": [
     "css",
@@ -32,7 +20,9 @@
     "theme/**/*.css"
   ],
   "files": [
-    "dist"
+    "dist",
+    "es",
+    "lib"
   ],
   "license": "MIT",
   "keywords": [

@@ -7,32 +7,28 @@ const componentsDir = resolve(__dirname, 'src')
 
 export default defineConfig({
   build: {
-    // outDir: 'es',
+    outDir: 'es',
     lib: {
       entry: resolve(componentsDir, 'index.ts'),
       name: 'WCowUI',
-      fileName: (format) => `wcow-ui.${format}.js`
     },
     rollupOptions: {
-      output: {
-        // {
-        //   format: 'cjs',
-        //   preserveModules: true,
-        //   preserveModulesRoot: componentsDir,
-        //   dir: 'lib',
-        //   entryFileNames: '[name].js'
-        // },
-        // {
-        //   format: 'es',
-        //   preserveModules: true,
-        //   preserveModulesRoot: componentsDir,
-        //   dir: 'es',
-        //   entryFileNames: '[name].mjs'
-        // }
-        globals: {
-          vue: 'Vue'
+      output: [
+        {
+          format: 'cjs',
+          preserveModules: true,
+          preserveModulesRoot: componentsDir,
+          dir: 'lib',
+          entryFileNames: '[name].js'
+        },
+        {
+          format: 'es',
+          preserveModules: true,
+          preserveModulesRoot: componentsDir,
+          dir: 'es',
+          entryFileNames: '[name].mjs'
         }
-      },
+      ],
       external: ['vue']
     }
   },

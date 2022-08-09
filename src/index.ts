@@ -8,15 +8,27 @@ import WInput from './components/input/index.vue'
 import type { App } from 'vue'
 
 const components = [
-  WButton,
-  WSelect,
-  WPopover,
-  WInput,
+  {
+    name: 'w-button',
+    component: WButton
+  },
+  {
+    name: 'w-select',
+    component: WSelect
+  },
+  {
+    name: 'w-popover',
+    component: WPopover
+  },
+  {
+    name: 'w-input',
+    component: WInput
+  }
 ]
 
 export function install(app: App) {
   components.forEach(component => {
-    app.component(component.name, component)
+    app.component(component.name, component.component)
   })
 }
 

@@ -7,13 +7,32 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "main": "lib/index.js",
-  "module": "es/index.mjs",
-  "types": "es/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/wcow-ui.es.js",
+      "require": "./dist/wcow-ui.umd.js",
+      "types": "./dist/wcow-ui.d.ts"
+    },
+    "./dist/*": {
+      "import": "./dist/wcow-ui.es.js",
+      "require": "./dist/wcow-ui.umd.js",
+      "types": "./dist/wcow-ui.d.ts"
+    }
+  },
+  "main": "./dist/wcow-ui.umd.js",
+  "module": "./dist/wcow-ui.es.js",
+  "types": "./dist/wcow-ui.d.ts",
+  "sideEffects": [
+    "css",
+    "dist/*",
+    "css/*.css",
+    "es/components/*/style.mjs",
+    "lib/components/*/style.js",
+    "style/**/*.scss",
+    "theme/**/*.css"
+  ],
   "files": [
-    "dist",
-    "es",
-    "lib"
+    "dist"
   ],
   "license": "MIT",
   "keywords": [

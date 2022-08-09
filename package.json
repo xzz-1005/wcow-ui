@@ -1,7 +1,7 @@
 {
   "name": "wcow-ui",
   "private": false,
-  "version": "0.2.51",
+  "version": "0.2.52",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.7",
+    "fast-glob": "^3.2.11",
     "postcss-import": "^14.1.0",
     "vue": "^3.2.37"
   },

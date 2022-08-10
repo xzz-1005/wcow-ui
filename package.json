@@ -1,10 +1,11 @@
 {
   "name": "wcow-ui",
   "private": false,
-  "version": "0.2.55",
+  "version": "0.2.56",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:dist": "vite build --mode dist",
     "preview": "vite preview"
   },
   "main": "lib/index.js",

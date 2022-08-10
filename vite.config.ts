@@ -34,6 +34,7 @@ export default defineConfig(async () => {
 	return {
 		build: {
 			outDir: 'es',
+      cssCodeSplit: true,
 			lib: {
 				entry: resolve(componentsDir, "index.ts"),
 				name: "WCowUI"

@@ -34,7 +34,6 @@ export default defineConfig(async () => {
 	return {
 		build: {
 			outDir: 'es',
-      cssCodeSplit: true,
 			lib: {
 				entry: resolve(componentsDir, "index.ts"),
 				name: "WCowUI"
@@ -62,19 +61,19 @@ export default defineConfig(async () => {
 			}
 		},
 		plugins: [
-			...prePlugins([
-				{
-					name: "wcow-ui:resolve",
-					resolveId(id) {
-						if (id.startsWith("@/style")) {
-							return {
-								id: id.replace(/@\/style\/(.+).scss$/, "wcow-ui/css/$1.css"),
-								external: "absolute"
-							};
-						}
-					}
-				}
-			]),
+			// ...prePlugins([
+			// 	{
+			// 		name: "wcow-ui:resolve",
+			// 		resolveId(id) {
+			// 			if (id.startsWith("@/style")) {
+			// 				return {
+			// 					id: id.replace(/@\/style\/(.+).scss$/, "wcow-ui/css/$1.css"),
+			// 					external: "absolute"
+			// 				};
+			// 			}
+			// 		}
+			// 	}
+			// ]),
 			vue(),
 			dts({
 				exclude: ["node_modules", "playground", "common/icons", "common/mixins", "common/utils"],

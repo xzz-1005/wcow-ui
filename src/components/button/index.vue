@@ -22,3 +22,7 @@ const { disabled, loading, type, round } = toRefs(props)
 // const _disabled = useDisabled()
 console.log('props', props)
 </script>
+
+<style lang="scss" scoped>
+@import "../../style/button.scss";
+</style>

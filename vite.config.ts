@@ -1,15 +1,15 @@
 import { resolve } from "path";
-import { readFileSync } from "fs";
+// import { readFileSync } from "fs";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import dts from "vite-plugin-dts";
-import glob from "fast-glob";
+// import glob from "fast-glob";
 
-interface Manifest {
-	dependencies?: Record<string, string>;
-	peerDependencies?: Record<string, string>;
-	version?: string;
-}
+// interface Manifest {
+// 	dependencies?: Record<string, string>;
+// 	peerDependencies?: Record<string, string>;
+// 	version?: string;
+// }
 
 // const input = await glob('components/**/*.{ts,vue}', {
 //   cwd: __dirname,
@@ -17,19 +17,18 @@ interface Manifest {
 //   onlyFiles: true
 // })
 
-const pkg = JSON.parse(readFileSync(resolve(__dirname, "package.json"), "utf-8")) as Manifest;
+// const pkg = JSON.parse(readFileSync(resolve(__dirname, "package.json"), "utf-8")) as Manifest;
 
-const prePlugins = (plugins: Plugin[]): Plugin[] => {
-	return plugins.map(plugin => ({ ...plugin, enforce: "pre", apply: "build" }));
-};
+// const prePlugins = (plugins: Plugin[]): Plugin[] => {
+// 	return plugins.map(plugin => ({ ...plugin, enforce: "pre", apply: "build" }));
+// };
 
-const externalPkgs = ["@vue"].concat(Object.keys(pkg.dependencies || {}), Object.keys(pkg.peerDependencies || {}));
-const external = (id: string) => externalPkgs.some(p => p === id || id.startsWith(`${p}/`));
+// const externalPkgs = ["@vue"].concat(Object.keys(pkg.dependencies || {}), Object.keys(pkg.peerDependencies || {}));
+// const external = (id: string) => externalPkgs.some(p => p === id || id.startsWith(`${p}/`));
 
 const componentsDir = resolve(__dirname, "src");
 
 export default defineConfig(async ({ command, mode }) => {
-	console.log("11111", command, mode);
 	if (mode === "dist") {
 		return {
 			build: {
@@ -59,7 +58,6 @@ export default defineConfig(async ({ command, mode }) => {
 					name: "WCowUI"
 				},
 				rollupOptions: {
-					// external,
 					output: [
 						{
 							format: "cjs",

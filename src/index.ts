@@ -4,6 +4,7 @@ import WButton from './components/button/index.vue'
 import WSelect from './components/select/index.vue'
 import WPopover from './components/popover/index.vue'
 import WInput from './components/input/index.vue'
+import WFullScreen from './components/FullScreen/index.vue'
 
 import type { App } from 'vue'
 
@@ -23,6 +24,10 @@ const components = [
   {
     name: 'w-input',
     component: WInput
+  },
+  {
+    name: 'w-fullscreen',
+    component: WFullScreen
   }
 ]
 
@@ -41,4 +46,5 @@ export {
   WSelect,
   WPopover,
   WInput,
+  WFullScreen
 }
